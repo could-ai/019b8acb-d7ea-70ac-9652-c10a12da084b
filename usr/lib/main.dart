@@ -25,7 +25,7 @@ class MountaineeringApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.slate,
+          seedColor: Colors.blueGrey, // Fixed: Colors.slate does not exist
           brightness: Brightness.light,
         ),
         useMaterial3: true,

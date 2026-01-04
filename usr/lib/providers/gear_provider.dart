@@ -46,7 +46,8 @@ class GearProvider with ChangeNotifier {
     }
   }
 
-  void assignItem(String id, String assignee) {
+  // Fixed: Changed assignee type to String? to allow null values
+  void assignItem(String id, String? assignee) {
     final index = _items.indexWhere((item) => item.id == id);
     if (index != -1) {
       _items[index].assignedTo = assignee;
